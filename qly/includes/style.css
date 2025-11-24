@@ -1,0 +1,257 @@
+/*
+	Author	:	Christopher Robinson
+	Email		:	christopher@edg3.co.uk
+	Website	:	http://www.edg3.co.uk/
+*/
+* {
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+/* general */
+a {
+	color:#777;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#333;
+	text-decoration:none;
+}
+
+/* body */
+body {
+	background:#ffffff;
+	color:#555;
+	font:0.8em Arial, Helvetica, "bitstream vera sans", sans-serif;
+}
+
+/* header */
+#header {
+	border-bottom:1px solid #999;
+	height:80px;
+	margin:0 auto;
+	width:751px;
+}
+#header h1 {
+	color:#888;
+	font-size:300%;
+	letter-spacing:-3px;
+	text-align:right;
+	padding:5px;
+	margin-bottom:-20px;
+}
+#header h2 {
+	color:#CCC;
+	font-size:200%;
+	letter-spacing:-2px;
+	text-align:right;
+}
+
+/* navigation */
+#navigation {
+	background:#fafafa;
+	/* border-right:1px solid #999; */
+	margin:0 auto;
+	/* width:750px; */
+	/* height:40px; */
+	list-style:none;
+	padding: 0;
+}
+#navigation li {
+	/* float:left;
+	width:149px; */
+	list-style:none;
+}
+#navigation a {
+	color:#555;
+	display:block;
+	/* line-height:40px; */
+	padding: 10px 15px;
+	text-align:center;
+	border-radius: 10px;
+	text-decoration: none;
+
+}
+#navigation a:hover {
+	background:#e3e3e3;
+	color:lightcoral;
+}
+#navigation .active {
+	background:#e3e3e3;
+	color:#777;
+}
+
+.carousel-item {
+	margin-top: 5px;
+  	height: 55vh; 
+}
+.carousel-item img {
+	max-width: 100%;
+	object-fit: contain;
+	width: auto;        
+	height: auto;
+	border-radius: 10px;
+}
+/* content */
+#content {
+	height:auto;
+	margin:0 auto;
+	padding:0 0 20px;
+	width:751px;
+}
+#content h1 {
+	border-bottom:1px dashed #999;
+	font-size:1.8em;
+	padding:20px 0 0;
+}
+#content p {
+	padding:20px 20px 0;
+}
+
+.categories ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;         
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categories li {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.categories li:hover {
+  transform: scale(1.05);
+}
+
+.categories img {
+  width: 100px;            
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.categories span {
+  margin-top: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #4a403a;
+}
+.categories li:hover span {
+    color: lightcoral;
+}
+
+.btn-filters.btn-sm {
+    background-color: #4a403a !important;
+    color: #fff !important;
+}
+.btn-filters.btn-sm:hover {
+    background-color: #6b5f55 !important;
+}
+
+/* Trang đang chọn */
+.page-item.active .page-link {
+    background-color: #4a403a !important; 
+    color: #fff !important;               
+    border-color: #4a403a !important;
+}
+.page-link {
+    background-color: transparent !important; 
+    color: #4a403a !important;
+    border: 1px solid #4a403a !important;
+    border-radius: 4px;
+    margin: 0 2px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.page-link:hover {
+    background-color: #4a403a !important;
+    color: #fff !important;
+}
+
+
+.grid{
+	display:grid;
+	grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+	gap:18px
+}   
+.card{
+	background:var(--card);
+	border-radius:10px;
+	border:1px solid #eee;
+	padding:12px;
+	display:flex;
+	flex-direction:column;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card .img{
+	height:auto;
+	border-radius:8px;
+	background:#f3f3f3;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:var(--muted)
+}
+.card h3{
+	font-size:16px;
+	margin:12px 0 6px
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.price{
+	font-weight:700
+}
+.muted{
+	color:var(--muted);
+	font-size:13px
+}
+.actions{
+	margin-top:auto;
+	display:flex;
+	gap:8px
+}
+.btn-outline{
+	padding:8px 10px;
+	border-radius:8px;
+	border:1px solid #ddd
+}
+
+
+/* footer */
+#footer {
+	border-top:1px solid #999; 
+	height:50px;
+	margin:0 auto;
+	padding:10px;
+	text-align:center;
+	width:751px;
+}
+
+/* Added by Larry Ullman: */
+.error, .ad {
+	font-weight: bold;
+	color: #C00
+}
+
+input, select, .input {
+	padding: 5px;
+	font-weight: bold;
+	font-size: 1em;
+	color: #008040;
+	background: #FFFFFF;
+	border:1px dotted #004080;
+}

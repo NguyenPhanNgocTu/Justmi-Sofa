@@ -1,0 +1,85 @@
+
+            body { 
+                display: flex; 
+                justify-content: flex-start; 
+                align-items: center; 
+                padding-top: 50px; 
+                flex-direction: column; 
+            }
+
+            h2 { 
+                text-align: center; 
+                color: lightpink; 
+                margin-bottom: 25px; 
+            }
+
+            form { 
+                background-color: rgba(88, 161, 209, 1); 
+                padding: 30px 40px; 
+                border-radius: 12px; 
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+                width: 50%; 
+                margin-bottom: 30px; 
+            }
+
+            .form-group { 
+                margin-bottom: 15px; 
+                display: flex; 
+                align-items: flex-start; 
+            }
+
+            .form-group label { 
+                width: 40%; 
+                font-weight: bold; 
+            }
+
+            .form-group input[type="text"], 
+            .form-group select, 
+            .form-group textarea, 
+            .form-group input[type="file"] {
+                width: 50%; 
+                padding: 8px 10px; 
+                border-radius: 5px; 
+                border: 1px solid #ccc; 
+                font-size: 14px; 
+                box-sizing: border-box;
+            }
+
+            .form-group textarea { 
+                height: 70px; 
+                resize: vertical; 
+            }
+
+            input[type="submit"] { 
+                background-color: lightpink; 
+                color: #2a5db0; 
+                border: none; 
+                padding: 8px 16px; 
+                border-radius: 5px; 
+                cursor: pointer; 
+                width: 100%; 
+                font-size: 16px; 
+                font-weight: bold; 
+            }
+
+            input[type="submit"]:hover { 
+                background-color: #7ccdd3ff; 
+                color: white; 
+            }
+
+            .back {
+                display: block; 
+                margin: 20px auto; 
+                background-color: #ccc; 
+                color: #333; 
+                border: none; 
+                padding: 8px 14px; 
+                border-radius: 6px; 
+                cursor: pointer; 
+                font-weight: bold;
+            }
+
+            .back:hover { 
+                background-color: #999; 
+                color: white; 
+            }
